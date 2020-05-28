@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authorizedActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authorized Person's Information"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/nameAuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Name"
+                android:layout_marginTop="25dp"
+                android:inputType="textPersonName"/>
+
+
+            <EditText
+                android:id="@+id/phoneAuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Email ID"
+                android:layout_marginTop="25dp"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/addressAuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Street Address"
+                android:inputType="textPersonName"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/addressAuthEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="City,State,Country"
+                android:inputType="textPersonName"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/pinCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/submitAuthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="submit"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

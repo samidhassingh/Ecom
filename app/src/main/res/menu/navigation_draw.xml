@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Dashboard"
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_assessment"
+            />
+        <item
+            android:title="Catalogue"
+            android:id="@+id/catalogue"
+            android:icon="@drawable/ic_style"
+            />
+        <item
+            android:title="I Sell"
+            android:id="@+id/isell"
+            android:icon="@drawable/ic_shopping"
+            />
+        <item
+            android:title="Promotions"
+            android:id="@+id/promotions"
+            android:icon="@drawable/ic_settlement"
+            />
+        <item
+            android:title="Finance"
+            android:id="@+id/finance"
+            android:icon="@drawable/ic_trending_up"
+            />
+        <item
+            android:title="My Account"
+            android:id="@+id/settlement"
+            android:icon="@drawable/ic_settlement"
+            />
+        <item
+            android:title="Settings"
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            />
+
+
+        <item
+            android:title="Support"
+            android:id="@+id/support"
+            android:icon="@drawable/ic_call"
+            />
+
+    </group>
+
+
+</menu>

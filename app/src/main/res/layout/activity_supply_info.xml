@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".supplyInfoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supply Information"
+                android:textColor="#0C0C0C"
+                android:textSize="30sp"/>
+
+            <Spinner
+                android:id="@+id/sellOnlineOffline"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/sellOnlineOffline"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell Online"
+                android:textColor="#0C0C0C"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/header4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell Offline"
+                android:textColor="#0C0C0C"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:textSize="24sp"/>
+            <EditText
+                android:id="@+id/offlineAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:ems="10"
+                android:hint="Shop/Workshop/Office Address"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/offlineZipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/offlineAddressProof"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Upload Address Proof"
+                android:visibility="gone"
+                android:layout_marginTop="25dp"
+                android:textColor="#0C0C0C"
+                android:textSize="22sp"/>
+
+
+            <ImageButton
+                android:id="@+id/offlineUploadChequeImageButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <Button
+                android:id="@+id/submitOfflineSupplyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:visibility="gone"
+                android:text="submit"/>
+
+
+            <EditText
+                android:id="@+id/pickUpEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Pick Up Address"
+                android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/onlinePickZipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:layout_marginTop="25dp"/>
+            <EditText
+                android:id="@+id/returnEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Return Address"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/onlineReturnZipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/addressProof"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Upload Address Proof"
+                android:layout_marginTop="25dp"
+                android:textColor="#0C0C0C"
+                android:textSize="22sp"/>
+
+            <ImageButton
+                android:id="@+id/uploadChequeImageButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <Button
+                android:id="@+id/submitOnlineSupplyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:visibility="gone"
+                android:text="submit"/>
+
+
+            <TextView
+                android:id="@+id/header3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell Offline"
+                android:textColor="#0C0C0C"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/bothlineAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Shop/Workshop/Office Address"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/bothlineZipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/bothlineAddressProof"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Upload Address Proof"
+                android:layout_marginTop="25dp"
+                android:textColor="#0C0C0C"
+                android:textSize="22sp"/>
+
+            <ImageButton
+                android:id="@+id/bothlineUploadChequeImageButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <Button
+                android:id="@+id/submitBothSupplyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="submit"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

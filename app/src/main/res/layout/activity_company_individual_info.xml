@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".companyIndividualInfo">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Information"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp"/>
+
+            <Spinner
+                android:id="@+id/typeOfAccount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/typeOfAccount"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/compNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Company Name"
+                android:layout_marginTop="15dp"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/compAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Street Address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/compAddressEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="City,State,Country"
+                android:inputType="textPersonName"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/pinCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/fixedNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Fixed Number"
+                android:inputType="phone"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/mobileNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:layout_marginTop="15dp"
+                android:inputType="phone"/>
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/panTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company's Pan Card"
+                android:textSize="18sp"
+                android:textColor="#0C0C0C"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/panNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PAN Number"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"/>
+
+            <ImageButton
+                android:id="@+id/uploadPanImageButton"
+                android:layout_width="39dp"
+                android:layout_height="36dp"
+                android:layout_gravity="left"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <Spinner
+                android:id="@+id/certificate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/certificate"
+                android:layout_marginTop="3dp"/>
+
+            <ImageButton
+                android:id="@+id/uploadCertificateImageButton"
+                android:layout_width="39dp"
+                android:layout_height="36dp"
+                android:layout_gravity="left"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <Button
+                android:id="@+id/submitCIButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="submit"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </LinearLayout>

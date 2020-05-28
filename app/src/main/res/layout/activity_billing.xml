@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".billingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billing Information"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/billingNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Billing Name"
+                android:layout_marginTop="25dp"
+                android:inputType="textPersonName"/>
+            <EditText
+                android:id="@+id/billAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Billing Address (Street)"
+                android:inputType="textPersonName"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/billAddressEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Billing Address(City,State,Country)"
+                android:inputType="textPersonName"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/pinBillCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ZIP Code"
+                android:inputType="number"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/submitIndiBillingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:visibility="gone"
+                android:text="submit"/>
+
+
+            <Spinner
+                android:id="@+id/billingYesNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/bilingYesNo"
+                android:layout_marginTop="25dp"/>
+
+
+            <EditText
+                android:id="@+id/gstNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="GST Number"
+                android:layout_marginTop="25dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/gstAddressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="GST Address"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/submitBillingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="submit"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

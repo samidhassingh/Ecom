@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bankingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banking Information"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/currentAccount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Current Account"
+                android:layout_marginTop="25dp"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/accountNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Account Name"
+                android:layout_marginTop="5dp"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/accountNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Account Number"
+                android:inputType="number"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:id="@+id/ifsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="IFS Code"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/cancelledCheque"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cancelled Cheque (Upload)"
+                android:layout_marginTop="25dp"
+                android:textColor="#0C0C0C"
+                android:textSize="22sp"/>
+
+            <ImageButton
+                android:id="@+id/uploadChequeImageButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                app:srcCompat="@android:drawable/ic_input_add" />
+            <Button
+                android:id="@+id/submitCIButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="submit"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

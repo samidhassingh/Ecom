@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Ecom</string>
+    <string-array name="Spinner_items">
+        <item>Company Status</item>
+        <item>Registered Company</item>
+        <item>Non Registered Company</item>
+    </string-array>
+    <string-array name="Support_Spinner">
+        <item>Account</item>
+        <item>Orders</item>
+        <item>Payment</item>
+        <item>Shipping</item>
+        <item>Catalogue</item>
+    </string-array>
+    <string-array name="account_type">
+        <item>Close</item>
+        <item>Hide</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="orders">
+        <item>Status</item>
+        <item>Refund</item>
+        <item>Return</item>
+        <item>Cancellation</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="payment">
+        <item>Delayed/Missing</item>
+        <item>Tax Questions</item>
+        <item>Settlement</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="catalogue">
+        <item>Wrong Product Info</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="shipping">
+        <item>Price</item>
+        <item>Zone</item>
+        <item>Cost</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="typeofacc">
+        <item>Individual</item>
+    </string-array>
+    <string-array name="typeofcert">
+        <item>Any Other Document(OPTIONAL)</item>
+    </string-array>
+    <string-array name="typeOfAccount">
+        <item>Account Type</item>
+        <item>Sole Proprietorship</item>
+        <item>Private Limited</item>
+        <item>Limited Liability Partnership</item>
+        <item>Registered Partnership</item>
+        <item>Public Limited Company</item>
+        <item>HF</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="certificate">
+        <item>Registration Certificate</item>
+        <item>MSME Registration Certificate</item>
+        <item>Shop Establishment Certificate</item>
+    </string-array>
+    <string-array name="bilingYesNo">
+        <item>GST Information</item>
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="sellOnlineOffline">
+        <item>Sell Bothline</item>
+        <item>Sell Online</item>
+        <item>Sell Offline</item>
+
+    </string-array>
+    <string name="title_activity_verify_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
